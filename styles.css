@@ -40,18 +40,48 @@ h2 img{
     width: 30px;
     margin-left: 10px;
 }
-.row{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #edeef0;
-    border-radius: 30px;
-    padding-left: 20px;
-    margin-bottom: 30px;
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f0f0f0;  /* light gray bar like in screenshot */
+  border-radius: 30px;
+  padding-left: 15px;
+  margin-bottom: 30px;
 }
-.input{
-    flex: 1;
+
+.row input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent; 
+  padding: 12px 15px;
+  font-size: 16px;
+}
+
+.row button {
+  border: none;
+  outline: none;
+  background: #ff6600;    
+  color: #fff;            
+  padding: 12px 20px;
+  margin-left: 5px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.row button:hover {
+  background: #e55a00;    
+}
+button{
     border: none;
-    outline: none
+    outline: none;
+    padding: 16px 50px;
+    background: #ff5945;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
 
 }
