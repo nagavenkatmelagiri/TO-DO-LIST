@@ -87,10 +87,29 @@ button{
 }
 ul li{
     list-style: none;
-    padding: 12px 8px  12px 50px;
+    padding: 12px 8px  12px 40px;
     user-select: none;
     cursor: pointer;
-    
+    position: relative;
     font-size: 17px;
     
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(Images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 12px;
+}
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url(Images/checked.png);
 }
